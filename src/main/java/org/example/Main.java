@@ -2,6 +2,8 @@ package org.example;
 
 import java.util.Arrays;
 import java.util.Random;
+import java.util.Scanner;
+import java.util.stream.IntStream;
 
 public class Main {
 
@@ -19,8 +21,16 @@ public class Main {
         for (int i = numbers.length-1; i>=0; i--){
             System.out.println(numbers[i]);
         }
+
+        Scanner scanner = new Scanner(System.in);
+        int x = scanner.nextInt();
+
+        Main main = new Main();
+        System.out.println(main.search(numbers, x));
     }
     private boolean search(int[] numbers, int x){
-        return true;
+        int value = x;
+        boolean contains = IntStream.of(numbers).anyMatch(number -> number == value );
+        return contains;
     }
 }
