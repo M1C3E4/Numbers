@@ -6,7 +6,7 @@ import java.util.Scanner;
 import java.util.stream.IntStream;
 
 public class Main {
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args){
 
         System.out.println("Maszyna losujaca jest pusta. Proszę o zwolnienie blokady.");
         System.out.println("Zaczynamy losowanie liczb całkowitych.");
@@ -15,7 +15,7 @@ public class Main {
 
         Random ranNumbersForArray = new Random();
 
-        int[] numbers = new int[1000000];
+        int[] numbers = new int[16000000];
 
         for (int i = 0; i < numbers.length; i++) {
             numbers[i] = ranNumbersForArray.nextInt();
