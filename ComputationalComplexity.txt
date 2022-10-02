@@ -1,0 +1,8 @@
+Złożoność czasowa jest wprost proporcjonalna do wielkości puli w której sprawdzamy czy istnieje liczba x.
+Dla 1 000 000 i 8 000 000 losowanych liczb w użytej pamięci była to różnica na poziomie 0.2Gb więcej
+po stronie puli 8 000 000.
+Natomiast przy poszukiwaniu liczby z puli 16 000 000 liczb
+nie zauważyłem wzrostu zapotrzebowania większego na pamięć niż przy puli 8 000 000 dlatego stwierdzam
+że złożoność pamięciowa jest stała.
+Analizując składowe złożoności obliczeniowej stwierdzam że jest ona stała.
+
