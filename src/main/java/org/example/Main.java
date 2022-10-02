@@ -9,12 +9,10 @@ public class Main {
     public static void main(String[] args) throws InterruptedException {
 
         System.out.println("Maszyna losujaca jest pusta. Proszę o zwolnienie blokady.");
-        System.out.println("Zaczynamy losowanie miliona liczb całkowitych.");
-
-        Thread thread = new Thread();
-        thread.sleep(3000);
+        System.out.println("Zaczynamy losowanie liczb całkowitych.");
 
         Scanner scanner = new Scanner(System.in);
+
         Random ranNumbersForArray = new Random();
 
         int[] numbers = new int[1000000];
